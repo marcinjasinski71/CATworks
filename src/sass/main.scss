@@ -1,3 +1,61 @@
-body {
-	background-color: #333;
+@use './global';
+
+$main-shade-color: #e0942f;
+$main-color: #ffc300;
+.hero-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.82);
+	z-index: -1;
+}
+
+.orange-color {
+	color: $main-color;
+}
+// nav
+
+.nav-link {
+	text-transform: uppercase;
+}
+.navbar-toggler {
+	padding: 0.5em 1em;
+	font-size: 2rem;
+}
+// home
+
+.home {
+	position: relative;
+	height: 60rem;
+	background-image: url('../img/cat-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+	.btn {
+		padding: 1em 2em;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		border-radius: 14px;
+		background-color: rgba(0, 0, 0, 0.1);
+		transition: background-color 0.4s, color 0.4s;
+
+		&:hover {
+			background-color: $main-shade-color;
+			color: rgb(39, 39, 39);
+			border: 1px solid transparent;
+			font-weight: bold;
+		}
+	}
+	.welcome-text {
+		font-size: 1.8rem;
+	}
+}
+
+.catworks-cat {
+	color: $main-color;
+}
+.catworks-works {
+	color: $main-shade-color;
 }

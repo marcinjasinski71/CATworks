@@ -19,27 +19,35 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background: rgb(78,78,78);
+background: linear-gradient(180deg, rgba(78,78,78,0.7389162561576355) 0%, rgba(6,7,8,1) 100%);" </nav>
+
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="../src/img/logo-cat.svg" alt="logo catworks"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Pricing</a>
-                <a class="nav-link disabled">Disabled</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="#home">Home</a>
+                <a class="nav-link" href="#aboutus">About us</a>
+                <a class="nav-link" href="#petfood">Pet Food</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </div>
         </div>
     </div>
 </nav>
+    <section id="home" class="home">
+    <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-light text-center">
 
+        <p class="display-1"><span class="catworks-cat">CAT</span><span class="catworks-works">works</span></p>
+        <p class="welcome-text mb-5">Purryfying experience for your cat.</p>
+        <a href="#aboutus" class="btn btn-outline-light">Learn more</a>
+        <div class="hero-shadow"></div>
 
-
-
+    </div>
+</section>
 
 
 
