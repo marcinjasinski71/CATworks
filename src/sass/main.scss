@@ -28,7 +28,7 @@ $main-color: #ffc300;
 
 .home {
 	position: relative;
-	height: 60rem;
+	height: 100vh;
 	background-image: url('../img/cat-bg.jpg');
 	background-size: cover;
 	background-position: center;
@@ -45,11 +45,11 @@ $main-color: #ffc300;
 			background-color: $main-shade-color;
 			color: rgb(39, 39, 39);
 			border: 1px solid transparent;
-			font-weight: bold;
 		}
 	}
 	.welcome-text {
-		font-size: 1.8rem;
+		font-size: 4.5rem;
+		font-family: 'Amatic SC', cursive;
 	}
 }
 
