@@ -2,6 +2,9 @@
 
 $main-shade-color: #e0942f;
 $main-color: #ffc300;
+$white-color: #e8e9ea;
+$black-color: #2c2c2c;
+$border-color: rgba(255, 255, 255, 0.2);
 .hero-shadow {
 	position: absolute;
 	top: 0;
@@ -17,9 +20,16 @@ $main-color: #ffc300;
 }
 // nav
 
+.navbar-dark .navbar-nav {
+	.nav-link:hover {
+		color: $main-shade-color;
+	}
+}
+
 .nav-link {
 	text-transform: uppercase;
 }
+
 .navbar-toggler {
 	padding: 0.5em 1em;
 	font-size: 2rem;
@@ -38,6 +48,7 @@ $main-color: #ffc300;
 		font-size: 1.5rem;
 		text-transform: uppercase;
 		border-radius: 14px;
+		border: 1px solid $border-color;
 		background-color: rgba(0, 0, 0, 0.1);
 		transition: background-color 0.4s, color 0.4s;
 
@@ -61,3 +72,32 @@ $main-color: #ffc300;
 }
 // -----
 // about us
+
+.aboutus-box {
+	border-radius: 15px;
+	border: 1px solid $border-color;
+	transition: color 0.4s, background-color 0.4s;
+	h3 {
+		font-size: 3.5rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-family: 'Amatic SC', cursive;
+		color: $main-color;
+	}
+	.aboutus-icon {
+		font-size: 4rem;
+		color: $main-shade-color;
+	}
+	&:hover {
+		background-color: $main-color;
+		color: $black-color;
+		border: $black-color;
+		h3,
+		.aboutus-icon {
+			color: $black-color;
+		}
+	}
+}
+.title {
+	color: $main-color;
+}
