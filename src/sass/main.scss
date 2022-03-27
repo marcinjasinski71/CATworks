@@ -5,6 +5,7 @@ $main-color: #ffc300;
 $white-color: #e8e9ea;
 $black-color: #2c2c2c;
 $border-color: rgba(255, 255, 255, 0.2);
+
 .hero-shadow {
 	position: absolute;
 	top: 0;
@@ -29,6 +30,15 @@ $border-color: rgba(255, 255, 255, 0.2);
 .nav-link {
 	text-transform: uppercase;
 }
+.navbar-dark .navbar-nav .nav-link {
+	color: $white-color;
+	&.active {
+		color: $main-color;
+	}
+}
+// .navbar-dark .navbar-nav .nav-link.active {
+// 	color: $main-color;
+// }
 
 .navbar-toggler {
 	padding: 0.5em 1em;
