@@ -1,6 +1,6 @@
 @use './global';
 
-$main-shade-color: #e0942f;
+$main-shade-color: rgb(224, 148, 47);
 $main-color: #ffc300;
 $white-color: #e8e9ea;
 $black-color: #2c2c2c;
@@ -98,6 +98,41 @@ $border-color: rgba(255, 255, 255, 0.2);
 		}
 	}
 }
+
+// karuzela
 .title {
 	color: $main-color;
+}
+.carousel {
+	margin: 30px 0;
+}
+
+.carousel-item {
+	position: relative;
+	height: 500px;
+
+	img {
+		background-size: cover;
+		filter: opacity(0.5);
+	}
+	p {
+		font-size: 1.5rem;
+		color: $white-color;
+	}
+	.carousel-title {
+		font-size: 2.5rem;
+		color: $main-color;
+		font-weight: bold;
+	}
+}
+.carousel-photos {
+	border-radius: 20px;
+}
+.carousel-caption {
+	position: absolute;
+	padding: 30px 50px;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+	background-color: rgba(0, 0, 0, 0.3);
 }
