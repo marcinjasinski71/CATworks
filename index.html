@@ -21,11 +21,10 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-example">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark py-3" style="background: rgb(73,73,73);
-background: linear-gradient(180deg, rgba(73,73,73,0) 0%, rgba(6,7,8,0) 100%);" </nav>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark py-3" style="background-color: rgba(0,0,0,0.3);" </nav>
 
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="../src/img/logo-cat.svg" alt="logo catworks"></a>
+        <a class="navbar-brand" href="#"><img src="../dist/img/logo-cat.svg" alt="logo catworks"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -107,6 +106,7 @@ background: linear-gradient(180deg, rgba(73,73,73,0) 0%, rgba(6,7,8,0) 100%);" <
         </div>
 
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
             <div class="carousel-indicators d-none">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -118,27 +118,24 @@ background: linear-gradient(180deg, rgba(73,73,73,0) 0%, rgba(6,7,8,0) 100%);" <
 
             <div class="carousel-inner carousel-photos">
                 <div class="carousel-item active">
-                    <img src="../src/img/catfood-mixed.jpg" class="d-block w-100" alt="...">
+                    <img src="../dist/img/catfood-mixed.jpg" class="d-block w-100" alt="Koty jedzące karmę">
                     <div class="carousel-caption">
                         <h5 class="carousel-title">Mixed CatWorks™</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iusto modi eveniet officia
-                            fuga minus impedit. Ipsam perferendis architecto non.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../src/img/catfood-dry.jpg" class="d-block w-100" alt="...">
+                    <img src="../dist/img/catfood-dry.jpg" class="d-block w-100 mh-100" alt="Kot jedzący karmę">
                     <div class="carousel-caption">
                         <h5 class="carousel-title">Dry CatWorks™</h5>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsam nulla non cumque
-                            possimus eum perspiciatis minus delectus nisi repellat!</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="../src/img/catfood-wet.jpg" class="d-block w-100" alt="...">
+                    <img src="../dist/img/catfood-wet.jpg" class="d-block w-100" alt="kot jedzący karmę">
                     <div class="carousel-caption">
                         <h5 class="carousel-title">Wet CatWorks™</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quidem, autem commodi esse
-                            tempora id enim eligendi sed ipsum molestiae!</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
             </div>
@@ -161,30 +158,34 @@ background: linear-gradient(180deg, rgba(73,73,73,0) 0%, rgba(6,7,8,0) 100%);" <
 </section>
         <section class="reviews" id="reviews">
 
-    <div class="container">
-        <h2 class="title">Customer reviews</h2>
+    <div class="container py-5 text-center">
+        <p class="display-3 mb-0 title">Customer reviews</p>
         <div class="underline"></div>
 
-        <div class="review__cards">
+        <div class="reviews__cards">
 
-            <div class="review__card">
-                <img src="" alt="">
-                <p class="review__card-name">XYZ</p>
-                <p class="review__card-opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ab
-                    repellat architecto perspiciatis quas quibusdam culpa quasi repellendus nemo. Tenetur?</p>
+            <div class="reviews__card">
+                <img src="../dist/img/review-first.jpg" alt="Man with glasses">
+                <p class="reviews__card-name">Michał</p>
+                <p class="reviews__card-opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, velit.
+                </p>
             </div>
-            <div class="review__card">
-                <img src="" alt="">
-                <p class="review__card-name">XYZ</p>
-                <p class="review__card-opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ab
-                    repellat architecto perspiciatis quas quibusdam culpa quasi repellendus nemo. Tenetur?</p>
+
+            <div class="reviews__card">
+                <img src="../dist/img/review-second.jpg" alt="woman">
+                <p class="reviews__card-name">Zuzanna</p>
+                <p class="reviews__card-opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, velit.
+                </p>
             </div>
-            <div class="review__card">
-                <img src="" alt="">
-                <p class="review__card-name">XYZ</p>
-                <p class="review__card-opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, ab
-                    repellat architecto perspiciatis quas quibusdam culpa quasi repellendus nemo. Tenetur?</p>
+
+            <div class="reviews__card">
+                <img src="../dist/img/review-third.jpg" alt="">
+                <p class="reviews__card-name">Maciej</p>
+                <p class="reviews__card-opinion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, velit.
+                </p>
             </div>
+
+
 
 
 

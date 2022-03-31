@@ -34,6 +34,10 @@ $border-color: rgba(255, 255, 255, 0.2);
 }
 
 // nav
+.navbar {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
 .navbar-dark .navbar-nav {
 	.nav-link:hover {
 		color: $main-shade-color;
@@ -129,7 +133,7 @@ $border-color: rgba(255, 255, 255, 0.2);
 
 .carousel-item {
 	position: relative;
-	height: 500px;
+	// height: 500px;
 
 	img {
 		background-size: cover;
@@ -149,14 +153,88 @@ $border-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
 }
 .carousel-caption {
-	position: absolute;
-	padding: 30px 50px;
+	position: relative;
 	left: 0;
-	right: 0;
-	bottom: 0px;
-	background-color: rgba(0, 0, 0, 0.3);
+	top: 0;
+	padding-top: 1rem;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 // reviews
 
+.reviews {
+	padding-top: 0.5em;
+	&__cards {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	&__card {
+		position: relative;
+		border: none;
+		border-radius: 8px;
+		padding: 20px;
+		width: 300px;
+		height: 200px;
+		margin: 2em 1em;
+		background: rgb(255, 200, 21);
+		background: radial-gradient(
+			circle,
+			rgba(255, 200, 21, 0.7457398832514045) 27%,
+			rgba(197, 127, 34, 0.6923690967345506) 76%
+		);
 
+		&-name {
+			font-size: 2rem;
+			margin-top: 1em;
+			margin-bottom: 1.5em;
+			font-weight: 700;
+			color: $white-color;
+		}
+		&-opinion {
+			color: $white-color;
+		}
+	}
+	img {
+		position: absolute;
+		width: 80px;
+		height: 80px;
+		object-fit: cover;
+		top: -30px;
+		right: -10px;
+		border-radius: 50%;
+		border: 5px solid $main-shade-color;
+	}
+}
+
+// MEDIAQUERIES
+@media (min-width: 768px) {
+	.reviews {
+		&__cards {
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.carousel-item {
+		height: 100%;
+	}
+	.carousel-caption {
+		position: absolute;
+		top: 85%;
+		height: 100%;
+	}
+	.reviews {
+		&__cards {
+			flex-direction: row;
+			flex-wrap: nowrap;
+		}
+		&__card {
+			width: 40%;
+		}
+	}
+} ;
