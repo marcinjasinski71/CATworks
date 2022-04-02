@@ -145,9 +145,6 @@ $border-color: rgba(255, 255, 255, 0.2);
 }
 
 .carousel-item {
-	position: relative;
-	// height: 500px;
-
 	img {
 		background-size: cover;
 		filter: opacity(0.5);
@@ -227,26 +224,36 @@ $border-color: rgba(255, 255, 255, 0.2);
 }
 
 // kontakt
+// kontakt
+
 .contact-box {
-	max-width: 70vw;
 	background-color: #2c2c2c21;
 	border-radius: 25px;
 	color: $white-color;
 
 	i {
-		color: $white-color;
+		color: $main-color;
 		font-size: 2rem;
 	}
 	a {
 		text-decoration: none;
-		color: $main-color;
+		color: $white-color;
 	}
 }
 .contact-social {
-	margin-top: 1em;
+	margin-top: 2em;
 }
 
+// ===================
 // MEDIAQUERIES
+// ===================
+
+@media (max-width: 992px) {
+	.contact-box {
+		max-width: 70vw;
+	}
+}
+
 @media (min-width: 768px) {
 	.reviews {
 		&__cards {
@@ -274,5 +281,8 @@ $border-color: rgba(255, 255, 255, 0.2);
 			width: 40%;
 			min-height: 240px;
 		}
+	}
+	.contact-box {
+		max-width: 70vw;
 	}
 } ;
