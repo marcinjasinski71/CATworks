@@ -226,6 +226,26 @@ $border-color: rgba(255, 255, 255, 0.2);
 	}
 }
 
+// kontakt
+.contact-box {
+	max-width: 70vw;
+	background-color: #2c2c2c21;
+	border-radius: 25px;
+	color: $white-color;
+
+	i {
+		color: $white-color;
+		font-size: 2rem;
+	}
+	a {
+		text-decoration: none;
+		color: $main-color;
+	}
+}
+.contact-social {
+	margin-top: 1em;
+}
+
 // MEDIAQUERIES
 @media (min-width: 768px) {
 	.reviews {
