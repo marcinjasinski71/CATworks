@@ -47,15 +47,12 @@ $border-color: rgba(255, 255, 255, 0.2);
 }
 
 // nav
-.navbar {
+.shadow-bg {
 	background: rgb(0, 0, 0);
 	background: linear-gradient(
 		180deg,
-		rgba(0, 0, 0, 1) 32%,
-		rgba(0, 0, 0, 0.7963016810042135) 54%,
-		rgba(0, 0, 0, 0.5912455012289326) 70%,
-		rgba(0, 0, 0, 0.3665264001053371) 80%,
-		rgba(0, 0, 0, 0) 100%
+		rgba(0, 0, 0, 1) 0%,
+		rgba(12, 11, 12, 0.7260769619030899) 100%
 	);
 }
 
@@ -91,17 +88,21 @@ $border-color: rgba(255, 255, 255, 0.2);
 	background-position: center;
 	z-index: 0;
 	.btn {
-		padding: 1em 2em;
+		padding: 1.5em 3em;
 		font-size: 1.5rem;
 		text-transform: uppercase;
 		border-radius: 14px;
 		border: 1px solid $border-color;
 		background-color: rgba(0, 0, 0, 0.1);
-		transition: background-color 0.4s, color 0.4s;
+		transition: background-color 0.4s, color 0.4s, font-size 0.4s;
 
 		&:hover {
-			background-color: $main-shade-color;
-			color: rgb(39, 39, 39);
+			font-size: 2.5rem;
+			background-image: url(../../dist/img/paw-solid.svg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			color: transparent;
 			border: 1px solid transparent;
 		}
 	}
