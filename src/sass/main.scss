@@ -94,11 +94,11 @@ $border-color: rgba(255, 255, 255, 0.2);
 		border-radius: 14px;
 		border: 1px solid $border-color;
 		background-color: rgba(0, 0, 0, 0.1);
-		transition: background-color 0.4s, color 0.4s, font-size 0.4s;
+		transition: background-color 0.5s, color 0.5s, font-size 0.5s;
 
 		&:hover,
 		&:active {
-			font-size: 2.2rem;
+			font-size: 1.9rem;
 			background-image: url(../../src/img/paw-solid.svg);
 			background-size: contain;
 			background-repeat: no-repeat;
@@ -204,14 +204,27 @@ $border-color: rgba(255, 255, 255, 0.2);
 		width: 300px;
 		height: 200px;
 		margin: 2em 1em;
+		cursor: default;
 		background: rgb(63, 63, 63);
 		background: linear-gradient(
 			167deg,
-			rgba(63, 63, 63, 1) 27%,
-			rgba(29, 29, 29, 1) 76%
+			rgba(63, 63, 63, 1) 15%,
+			rgba(29, 29, 29, 1) 80%
 		);
+
 		&:hover {
-			animation: reviewPhoto 0.3s forwards;
+			.review-img {
+				transition: ease-in 0.4s;
+				transform: scale(1.2);
+			}
+			.reviews__card-name {
+				transition: color 0.4s;
+				color: $main-color;
+			}
+			.underline-small {
+				transition: width 0.4s;
+				width: 150px;
+			}
 		}
 
 		&-name {
