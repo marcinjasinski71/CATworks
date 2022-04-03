@@ -88,7 +88,7 @@ $border-color: rgba(255, 255, 255, 0.2);
 	background-position: center;
 	z-index: 0;
 	.btn {
-		padding: 1.5em 3em;
+		padding: 2em 4em;
 		font-size: 1.5rem;
 		text-transform: uppercase;
 		border-radius: 14px;
@@ -96,9 +96,10 @@ $border-color: rgba(255, 255, 255, 0.2);
 		background-color: rgba(0, 0, 0, 0.1);
 		transition: background-color 0.4s, color 0.4s, font-size 0.4s;
 
-		&:hover {
-			font-size: 2.5rem;
-			background-image: url(../../dist/img/paw-solid.svg);
+		&:hover,
+		&:active {
+			font-size: 2.2rem;
+			background-image: url(../../src/img/paw-solid.svg);
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-position: center;
@@ -272,9 +273,12 @@ $border-color: rgba(255, 255, 255, 0.2);
 // MEDIAQUERIES
 // ===================
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 	.contact-box {
 		max-width: 70vw;
+	}
+	.face-left {
+		left: -10px;
 	}
 }
 
