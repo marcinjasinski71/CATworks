@@ -141,6 +141,8 @@ $border-color: rgba(255, 255, 255, 0.2);
 	.aboutus-icon {
 		font-size: 4rem;
 		color: $main-shade-color;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 	&:hover {
 		background-color: $main-color;
