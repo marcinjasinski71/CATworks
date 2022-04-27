@@ -1,6 +1,6 @@
 ![logo-cat](https://user-images.githubusercontent.com/27773815/161389681-e97e3f9c-87d8-432e-b283-5e688ef45ce7.svg)
 
-<b><h2>CAT works site.</h2><br></b>
+<b><h2>CATworks site.</h2><br></b>
 
 <h3>Created by: Marcin Jasiński</h3>
 
